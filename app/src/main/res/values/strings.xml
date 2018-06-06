@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music Mojave</string>
+    <string name="music_name">Music Name</string>
+    <string name="duration">Duration</string>
+    <string name="now_playing">Now Playing:</string>
+    <string name="title_activity_now_playing">Song Details</string>
+</resources>
