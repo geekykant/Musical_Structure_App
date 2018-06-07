@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".playingActivity"
+            android:name=".PlayingActivity"
             android:label="@string/title_activity_now_playing">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

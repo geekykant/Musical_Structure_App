@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 ((Button)findViewById(R.id.checkPlaying)).setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(MainActivity.this, playingActivity.class);
+                        Intent intent = new Intent(MainActivity.this, PlayingActivity.class);
                         intent.putExtra("INTENT_PNAME", playing.getName());
                         intent.putExtra("INTENT_DNAME", playing.getDuration());
                         startActivity(intent);
