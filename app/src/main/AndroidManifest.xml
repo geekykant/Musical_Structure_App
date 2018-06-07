@@ -17,7 +17,11 @@
         </activity>
         <activity
             android:name=".playingActivity"
-            android:label="@string/title_activity_now_playing"/>
+            android:label="@string/title_activity_now_playing">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

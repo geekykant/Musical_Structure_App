@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class customAdapter extends ArrayAdapter<music> {
+public class CustomAdapter extends ArrayAdapter<Music> {
 
     private static int mResource;
     private static Context mContext;
 
-    customAdapter(@NonNull Context context, int resource, @NonNull List<music> objects) {
+    CustomAdapter(@NonNull Context context, int resource, @NonNull List<Music> objects) {
         super(context, resource, objects);
         mContext = context;
         mResource = resource;
@@ -31,7 +31,7 @@ public class customAdapter extends ArrayAdapter<music> {
             listview = LayoutInflater.from(mContext).inflate(mResource, parent, false);
         }
 
-        music newdetails = getItem(position);
+        Music newdetails = getItem(position);
 
         ((TextView) listview.findViewById(R.id.text1)).setText(newdetails.getName());
         ((TextView) listview.findViewById(R.id.text2)).setText(newdetails.getDuration());

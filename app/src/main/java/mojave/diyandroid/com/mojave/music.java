@@ -1,6 +1,10 @@
 package mojave.diyandroid.com.mojave;
 
-public class music {
+public class Music {
+    private String name;
+    private String duration;
+
+
     public String getName() {
         return name;
     }
@@ -13,16 +17,9 @@ public class music {
         return duration;
     }
 
-    public void duration(String duration) {
-        this.duration = duration;
-    }
 
-    public music(String name, String duration) {
+    public Music(String name, String duration) {
         this.name = name;
-
         this.duration = duration;
     }
-
-    private String name;
-    private String duration;
 }
